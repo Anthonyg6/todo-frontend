@@ -1,0 +1,11 @@
+.header-wrapper {
+  display: grid;
+  grid-column: content-s/content-e;
+  grid-row: header-s/header-e;
+  justify-items: center;
+  background-color: #f5f5f5;
+
+  .current-clock {
+    padding-top: 15px;
+  }
+}

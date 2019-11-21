@@ -1,0 +1,49 @@
+.todo-form-wrapper {
+  display: grid;
+  grid-column: content-s/content-e;
+  grid-row: input-s/input-e;
+  justify-content: center;
+  align-self: center;
+
+  .todo-input {
+    // display: grid;
+    box-sizing: border-box;
+    height: 39px;
+    width: 45vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 15px;
+    color: #6666;
+    font-size: 18px;
+
+    &:focus {
+      color: rgb(57, 56, 56);
+    }
+    &:focus,
+    &:hover {
+      outline: none;
+      border: 2px solid teal;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+    }
+  }
+
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+  }
+
+  :-ms-input-placeholder {
+    text-align: center;
+  }
+}

@@ -1,0 +1,81 @@
+.todo-container {
+  display: grid;
+  grid-column: content-s/content-e;
+  grid-row: collection-s/collection-e;
+  justify-content: center;
+
+  .todo-collection {
+    display: flex;
+    flex-direction: column;
+    // padding-left: 20px;
+    align-items: start;
+    width: 300px;
+    height: 300px;
+    grid-column: content-s/content-e;
+    grid-row: collection-s/collection-e;
+    justify-items: center;
+    overflow-y: scroll;
+  }
+
+  .no-todos {
+    align-self: center;
+    padding-bottom: 100px;
+  }
+}
+
+.todos {
+  display: flex;
+  justify-content: center;
+
+  .delete-btn {
+    display: grid;
+    grid-row: collection-s/collection-e;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 4px 10px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+}
+
+// .todo-container {
+//   //   display: flex;
+//   //   flex-direction: column;
+//   justify-items: center;
+//   align-items: center;
+//   height: 300px;
+//   grid-column: content-s/content-e;
+//   grid-row: collection-s/collection-e;
+//   justify-items: center;
+//   overflow-y: scroll;
+// }
+
+// .todo-collection {
+//   display: grid;
+//   justify-items: center;
+//   align-items: center;
+//   height: 300px;
+//   grid-column: content-s/content-e;
+//   grid-row: collection-s/collection-e;
+//   justify-items: center;
+//   overflow-y: scroll;
+
+//   .deleteTodo-btn {
+//     display: grid;
+//     grid-row: collection-s/collection-e;
+//     background-color: red;
+//     border: none;
+//     padding: 3px;
+//     text-align: center;
+//     text-decoration: none;
+//     font-size: 10px;
+//     margin: 4px 2px;
+//     cursor: pointer;
+//     border-radius: 50px;
+//   }
+// }
