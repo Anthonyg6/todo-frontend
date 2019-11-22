@@ -17,7 +17,7 @@ export default class TodoContainer extends Component {
   getTodoItems() {
     setInterval(() => {
       axios
-        .get("http://localhost:3500/todo/todos")
+        .get("https://ag-todo-server.herokuapp.com/todo/todos")
         .then(response => {
           this.setState({
             data: response.data
@@ -32,7 +32,7 @@ export default class TodoContainer extends Component {
   deleteTodos(_id) {
     event.preventDefault();
     axios
-      .delete(`http://localhost:3500/todo/todos/${_id}`)
+      .delete(`https://ag-todo-server.herokuapp.com/todo/todos/${_id}`)
       .then(response => {
         console.log("Your Todo has been deleted!");
       })

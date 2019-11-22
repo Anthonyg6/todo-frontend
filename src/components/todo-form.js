@@ -23,7 +23,7 @@ export default class TodoForm extends Component {
     event.preventDefault();
     axios({
       method: "post",
-      url: "http://localhost:3500/todo/todos",
+      url: "https://ag-todo-server.herokuapp.com/todo/todos",
       headers: { "content-type": "application/json" },
       data: {
         _id: this.state._id,
